@@ -173,13 +173,11 @@
 
     <script type="text/javascript">
         var myadido = document.getElementById("player");
-
-        setTimeout(function() {
+        setInterval(function() {
+            console.log("ok")
             myadido.play();
-
-        }, 100);
+        }, 1000);
     </script>
-
     <script>
         if (screen.width <= 1024) {
             document.getElementById("checkDT").classList.add('fixDT');
