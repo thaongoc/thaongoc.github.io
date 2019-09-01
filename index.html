@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -175,7 +174,13 @@
         var myadido = document.getElementById("player");
         setInterval(function() {
             console.log("ok")
-            myadido.play();
+            var promise = document.querySelector('audio').play();
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    myadido.play();
+                })
+            }
+
         }, 1000);
     </script>
     <script>
