@@ -104,6 +104,12 @@
             }
         }
     </style>
+
+    <script>
+        window.onload = function() {
+            var context = new AudioContext();
+        }
+    </script>
 </head>
 
 <body onload="start()">
@@ -158,11 +164,22 @@
             </div>
         </div>
     </div>
+
     <div class="audio">
         <audio id="player" autoplay controls>
-                <source src="music/anhnangcuaanh.mp3" type="audio/mp3">
+                <source src="./music/anhnangcuaanh.mp3" type="audio/mpeg">
             </audio>
     </div>
+
+    <script type="text/javascript">
+        var myadido = document.getElementById("player");
+
+        setTimeout(function() {
+            myadido.play();
+
+        }, 100);
+    </script>
+
     <script>
         if (screen.width <= 1024) {
             document.getElementById("checkDT").classList.add('fixDT');
@@ -175,10 +192,10 @@
 
     <script type="text/javascript">
         var audios = [
-            "music/anhnangcuaanh.mp3",
-            "music/suynghitronganh.mp3",
-            "music/yeuemratnhieu.mp3",
-            "music/danhchoem.mp3"
+            "./music/anhnangcuaanh.mp3",
+            "./music/suynghitronganh.mp3",
+            "./music/yeuemratnhieu.mp3",
+            "./music/danhchoem.mp3"
         ];
         var music = document.getElementById("player");
         var getSrc = document.getElementsByTagName("source");
