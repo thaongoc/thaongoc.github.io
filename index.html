@@ -22,7 +22,7 @@
             -webkit-animation-duration: 10s;
             top: 5px;
             left: 375px;
-            margin-left: 25%;
+            margin-left: 40%;
         }
         
         .iconHeart {
@@ -44,6 +44,9 @@
             position: absolute;
             margin-left: 25%;
             bottom: 10px;
+            -webkit-animation: linear infinite alternate;
+            -webkit-animation-name: panda1run;
+            -webkit-animation-duration: 5s;
         }
         
         .panda2 {
@@ -53,7 +56,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-left: 55%;
+            margin-left: 53%;
             position: absolute;
             bottom: 10px;
         }
@@ -65,7 +68,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-left: 35%;
+            margin-left: 37%;
             position: absolute;
             bottom: 10px;
         }
@@ -89,9 +92,12 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-left: 65%;
+            margin-left: 60%;
             position: absolute;
             bottom: 10px;
+            -webkit-animation: linear infinite alternate;
+            -webkit-animation-name: panda2run;
+            -webkit-animation-duration: 5s;
         }
         
         @-webkit-keyframes run {
@@ -99,7 +105,31 @@
                 left: 0;
             }
             50% {
-                left: 60%;
+                left: 15%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        
+        @-webkit-keyframes panda1run {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 5%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        
+        @-webkit-keyframes panda2run {
+            0% {
+                left: 0;
+            }
+            50% {
+                left: 5%;
             }
             100% {
                 left: 0;
@@ -121,7 +151,7 @@
             <label for=""></label>
             <ul>
                 <li class="menu-item">
-                    <a class="fas fa-cat" href=""></a>
+                    <a class="fas fa-cat" href="">Anh</a>
                 </li>
                 <li class="menu-item">
                     <a class="fas fa-cookie-bite" href="#"></a>
@@ -130,13 +160,13 @@
                     <a class="fab fa-earlybirds" href="#"></a>
                 </li>
                 <li class="menu-item">
-                    <a class="fab fa-fly" href="#"></a>
+                    <a class="fab fa-fly" href="#">^.^</a>
                 </li>
                 <li class="menu-item">
-                    <a class="far fa-gem" href="#" id=""></a>
+                    <a class="far fa-gem" href="#" id="">em</a>
                 </li>
                 <li class="menu-item">
-                    <a class="fas fa-glass-cheers" href="#"></a>
+                    <a class="fas fa-glass-cheers" href="#">thích</a>
                 </li>
             </ul>
         </nav>

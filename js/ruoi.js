@@ -104,16 +104,16 @@ function Fly(fid, type, color, sh, sw, x, y, fly_img, name, title) {
     t.style.boxShadow = '1px 1px 2px 1px #222222';
     t.style.display = 'none';
     if (this.name == 'Ruồi nhút nhát') {
-        $(t).html(this.name + " nói:\n" + '"Ngươi đang cười phải không ? Cười nhiều lên nhé vì ngươi cười rất đẹp"');
+        $(t).html(this.name + " nói:\n" + '"Chủ nhân ta nói ngươi cười nhiều lên nhé vì ngươi cười rất đẹp"');
         this.gender = "Đực";
     } else if (this.name == 'Ruồi cool ngầu') {
-        $(t).html(this.name + " nói:\n" + '"Ngươi cười đẹp lắm"');
+        $(t).html(this.name + " nói:\n" + '"Chủ nhân ta nói cười đẹp lắm, đừng làm mặt ngầu nữa nhé chủ nhân ta sợ :("');
         this.gender = "Đực";
     } else if (this.name == 'Ruồi lãng tử') {
-        $(t).html(this.name + " nói:\n" + '"Đi khắp thể gian chỉ có 2 nụ cười làm ta muốn gục ngã là của NGƯƠI và gia đình ta vì vậy ngươi cười nhiều lên nhé"');
+        $(t).html(this.name + " nói:\n" + '"Chủ nhân ta kể đi khắp thể gian chỉ có 2 nụ cười làm chủ nhân ta muốn gục ngã là của NGƯƠI và gia đình vì vậy ngươi cười nhiều lên nhé"');
         this.gender = "Cái";
     } else {
-        $(t).html(this.name + " nói:\n" + '"Ngươi có biết ngươi cười đẹp như thế nào không ? like.....sunshine"');
+        $(t).html(this.name + " nói:\n" + '"Chủ nhân ta hỏi ngươi có biết ngươi cười đẹp như thế nào không ? like.....sunshine"');
         this.gender = "Đực";
     }
 
@@ -155,34 +155,34 @@ function Fly(fid, type, color, sh, sw, x, y, fly_img, name, title) {
             var value_message = Math.floor(Math.random() * 10) + 1;
             switch (value_message) {
                 case 1:
-                    $(t).html(parent.name + " nói:\n" + '"Dù thế nào thì ta vẫn thích ngươi"')
+                    $(t).html(parent.name + " nói:\n" + '"Dù thế nào thì ta vẫn thích ngươi dù có xẹp lép như con tép"')
                     break;
                 case 2:
                     $(t).html(parent.name + " nói:\n" + '"Vì nụ cười của ngươi nên ta tha mạng cho ngươi đó"')
                     break;
                 case 3:
-                    $(t).html(parent.name + " nói:\n" + '"mother"')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi ngầu lắm nhưng vẫn dễ thương nên ta tha mạng"')
                     break;
                 case 4:
-                    $(t).html(parent.name + " nói:\n" + '"father"')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi lạnh lùng mà sao lại tàn sát ta, ta....thích ngươi"')
                     break;
                 case 5:
-                    $(t).html(parent.name + " nói:\n" + '"son"')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi dám đánh ta à ta về méc chủ nhân ta, không dễ bỏ qua đâu"')
                     break;
                 case 6:
-                    $(t).html(parent.name + " nói:\n" + '"Ta thích ngươi."')
+                    $(t).html(parent.name + " nói:\n" + '"Giết ruồi đền mạng nhưng vì nụ cười của ngươi ta tha đó"')
                     break;
                 case 7:
-                    $(t).html(parent.name + " nói:\n" + '"Ta yêu ngươi"')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi có biết đau đớn nhất trên cuộc đời này là gì không ? Là say nắng một người"')
                     break;
                 case 8:
-                    $(t).html(parent.name + " nói:\n" + '"Ta nhớ ngươi"')
+                    $(t).html(parent.name + " nói:\n" + '"Cuộc sống này thật khó khi không có được ngươi haizzz"')
                     break;
                 case 9:
-                    $(t).html(parent.name + " nói:\n" + '"Ta ghét ngươi !"')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi có biết rắng vì ngươi mà ta tăng mấy độ cận không *-*, ta đùa thôi"')
                     break;
                 case 10:
-                    $(t).html(parent.name + " nói:\n" + '"Ta muốn hôn ngươi..."')
+                    $(t).html(parent.name + " nói:\n" + '"Ngươi giết ta nhưng không thể làm ta ngưng thích ngươi được"')
                     break;
             }
             if (parent.hasclick) {
