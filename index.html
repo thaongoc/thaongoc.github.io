@@ -211,12 +211,19 @@
         }, 1000);
     </script>
     <script>
+        var a = 0;
         if (screen.width < 736) {
             document.getElementById("checkDT").classList.add('fixDT');
         } else {
             if (document.getElementById("checkDT").classList.contains('fixDT')) {
                 document.getElementById("checkDT").classList.remove('fixDT');
             }
+        }
+
+        window.onresize = resize;
+
+        function resize() {
+            location.reload();
         }
     </script>
 
