@@ -19,7 +19,10 @@
             text-align: center;
             -webkit-animation: linear infinite alternate;
             -webkit-animation-name: run;
-            -webkit-animation-duration: 40s;
+            -webkit-animation-duration: 10s;
+            top: 5px;
+            left: 375px;
+            margin-left: 25%;
         }
         
         .iconHeart {
@@ -96,19 +99,13 @@
                 left: 0;
             }
             50% {
-                left: 100%;
+                left: 60%;
             }
             100% {
                 left: 0;
             }
         }
     </style>
-
-    <script>
-        window.onload = function() {
-            var context = new AudioContext();
-        }
-    </script>
 </head>
 
 <body onload="start()">
@@ -118,7 +115,7 @@
     <div class="panda4"></div>
     <div class="panda5"></div>
 
-    <div id="mydiv" class="iconHeart" style="top:5px;left:375px;margin-left: 25%;margin-right: 50%">
+    <div id="mydiv" class="iconHeart">
         <nav>
             <input class="menu-toggler " type="checkbox">
             <label for=""></label>
